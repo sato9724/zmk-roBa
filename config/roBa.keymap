@@ -92,7 +92,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans           &kp C_VOLUME_UP                                              &kp DOWN_ARROW
             >;
 
-            sensor-bindings = <&inc_dec_kp &kp SCROLL_UP &kp SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp SCROLL_UP SCROLL_DOWN>;
         };
     };
 };
