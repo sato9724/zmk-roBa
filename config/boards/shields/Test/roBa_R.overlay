@@ -54,7 +54,7 @@
 / {
     chosen {
         zmk,sensor-scroll = &trackball;
-    };
+    }
 };
 
     trackball: trackball@0 {
