@@ -51,12 +51,6 @@
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
 
-/ {
-    chosen {
-        zmk,sensor-scroll = &trackball;
-    }
-};
-
     trackball: trackball@0 {
         status = "okay";
         compatible = "pixart,pmw3610";
