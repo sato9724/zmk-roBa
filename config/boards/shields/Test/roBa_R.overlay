@@ -19,6 +19,10 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
+// スクロールモードのオーバーライドを追加
+        scroll_mode {
+            layers = <1>;                    // レイヤー1がアクティブのとき適用
+            input-processors = <&zip_xy_to_scroll_mapper>;
     };
 };
 
