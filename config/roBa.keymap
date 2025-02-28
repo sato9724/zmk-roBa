@@ -64,8 +64,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Layer0 {
-            bindings = <
+            Layer0 {
+            bindings = <  
 &trans  &trans  &trans  &trans  &trans                                      &kp Y                   &kp U  &kp I      &kp O      &kp P
 &trans  &trans  &trans  &trans  &trans  &trans      &mt RIGHT_CONTROL A     &kp H                   &kp J  &kp K      &kp L      &lt 1 RETURN
 &trans  &trans  &trans  &trans  &trans  &trans      &mt RIGHT_SHIFT Z       &kp N                   &kp M  &mkp LCLK  &mkp RCLK  &kp BACKSPACE
