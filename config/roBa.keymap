@@ -78,7 +78,7 @@
         Layer1 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                       &kp Q   &kp W  &kp E  &kp R  &kp T
-&trans  &trans  &trans  &trans  &trans  &trans      &mt RIGHT_CONTROL COMMA  &kp S   &kp D  &kp F  &kp G  &kp LBRC
+&trans  &trans  &trans  &trans  &trans  &trans      &mt RIGHT_CONTROL COMMA  &kp S   &kp D  &kp F  &kp G  &kp LBKT
 &trans  &trans  &trans  &trans  &trans  &trans      &mt RIGHT_SHIFT PERIOD   &kp X   &kp C  &kp V  &kp B  &kp SINGLE_QUOTE
 &trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_DOWN        &trans                       &kp MINUS
             >;
