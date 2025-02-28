@@ -1,7 +1,7 @@
+#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <input/processors.dtsi>
 
 #define MOUSE 4
 #define SCROLL 5
@@ -67,10 +67,10 @@
 
         Layer0 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                      &kp Y                   &kp U  &kp I      &kp O      &kp P
-&trans  &trans  &trans  &trans  &trans  &trans      &mt RIGHT_CONTROL A     &kp H                   &kp J  &kp K      &kp L      &lt 1 RETURN
-&trans  &trans  &trans  &trans  &trans  &trans      &mt RIGHT_SHIFT Z       &kp N                   &kp M  &mkp LCLK  &mkp RCLK  &kp C
-&trans  &trans  &trans  &trans  &trans  &trans      &lt_to_layer_0 2 SPACE  &lt_to_layer_0 1 SLASH                               &mt RIGHT_ALT GRAVE
+&trans  &trans  &trans  &trans  &trans                                      &kp Y  &kp U  &kp I      &kp O      &kp P
+&trans  &trans  &trans  &trans  &trans  &trans      &mt RIGHT_CONTROL A     &kp H  &kp J  &kp K      &kp L      &lt 1 RETURN
+&trans  &trans  &trans  &trans  &trans  &trans      &mt RIGHT_SHIFT Z       &kp N  &kp M  &mkp LCLK  &mkp RCLK  &mt RIGHT_SHIFT BACKSPACE
+&trans  &trans  &trans  &trans  &trans  &trans      &lt_to_layer_0 2 SPACE  &to 1                               &mt RIGHT_ALT GRAVE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -80,17 +80,17 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                       &kp Q   &kp W  &kp E  &kp R  &kp T
 &trans  &trans  &trans  &trans  &trans  &trans      &mt RIGHT_CONTROL COMMA  &kp S   &kp D  &kp F  &kp G  &kp LBKT
-&trans  &trans  &trans  &trans  &trans  &trans      &mt RIGHT_SHIFT PERIOD   &kp X   &kp C  &kp V  &kp B  &kp SINGLE_QUOTE
+&trans  &trans  &trans  &trans  &trans  &trans      &mt RIGHT_SHIFT SLASH    &kp X   &kp C  &kp V  &kp B  &kp SINGLE_QUOTE
 &trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_DOWN        &trans                       &kp MINUS
             >;
         };
 
         Layer2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                               &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &kp C_BRI_DN    &kp C_BRI_UP
-&trans  &trans  &trans  &trans  &trans  &trans      &kp NUMBER_0     &kp NUMBER_4     &kp NUMBER_5  &kp NUMBER_6  &kp COLON       &kp UP_ARROW
-&trans  &trans  &trans  &trans  &trans  &trans      &kp RIGHT_SHIFT  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_ARROW  &kp RIGHT_ARROW
-&trans  &trans  &trans  &trans  &trans  &trans      &trans           &kp C_VOLUME_UP                                              &kp DOWN_ARROW
+&trans  &trans  &trans  &trans  &trans                                  &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &kp C_BRI_DN    &kp C_BRI_UP
+&trans  &trans  &trans  &trans  &trans  &trans      &kp NUMBER_0        &kp NUMBER_4     &kp NUMBER_5  &kp NUMBER_6  &kp COLON       &kp UP_ARROW
+&trans  &trans  &trans  &trans  &trans  &trans      &mt LEFT_SHIFT DOT  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_ARROW  &kp RIGHT_ARROW
+&trans  &trans  &trans  &trans  &trans  &trans      &trans              &kp C_VOLUME_UP                                              &kp DOWN_ARROW
             >;
         };
     };
