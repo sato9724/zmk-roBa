@@ -78,8 +78,8 @@
         Layer1 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                       &kp Q   &kp W  &kp E  &kp R  &kp T
-&trans  &trans  &trans  &trans  &trans  &trans      &mt RIGHT_CONTROL COMMA  &kp S   &kp D  &kp F  &kp G  &kp COLON
-&trans  &trans  &trans  &trans  &trans  &trans      &mt RIGHT_SHIFT PERIOD   &kp X   &kp C  &kp V  &kp B  &kp PLUS
+&trans  &trans  &trans  &trans  &trans  &trans      &mt RIGHT_CONTROL COMMA  &kp S   &kp D  &kp F  &kp G  &kp LBRC
+&trans  &trans  &trans  &trans  &trans  &trans      &mt RIGHT_SHIFT PERIOD   &kp X   &kp C  &kp V  &kp B  &kp SINGLE_QUOTE
 &trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_DOWN        &trans                       &kp MINUS
             >;
         };
@@ -87,7 +87,7 @@
         Layer2 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                               &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &kp C_BRI_DN    &kp C_BRI_UP
-&trans  &trans  &trans  &trans  &trans  &trans      &kp NUMBER_0     &kp NUMBER_4     &kp NUMBER_5  &kp NUMBER_6  &kp AT_SIGN     &kp UP_ARROW
+&trans  &trans  &trans  &trans  &trans  &trans      &kp NUMBER_0     &kp NUMBER_4     &kp NUMBER_5  &kp NUMBER_6  &kp COLON       &kp UP_ARROW
 &trans  &trans  &trans  &trans  &trans  &trans      &kp RIGHT_SHIFT  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_ARROW  &kp RIGHT_ARROW
 &trans  &trans  &trans  &trans  &trans  &trans      &trans           &kp C_VOLUME_UP                                              &kp DOWN_ARROW
             >;
