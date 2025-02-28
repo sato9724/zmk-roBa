@@ -15,14 +15,13 @@
 };
 
 / {
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
+    &trackball_listener {
+    scroller {                       // ノード名は任意
+        layers = <1>;                // Layer1で有効
+        input-processors = <&zip_xy_to_scroll_mapper>;  // XY入力→スクロールに置換
+    };
+};
 
-// スクロールモードのオーバーライドを追加
-        scroll_mode {
-            layers = <1>;                    // レイヤー1がアクティブのとき適用
-            input-processors = <&zip_xy_to_scroll_mapper>;
     };
 };
 
