@@ -67,10 +67,10 @@
 
         Layer0 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                    &mt Q Y                  &mt W U  &mt E I    &mt R O    &mt P T
-&trans  &trans  &trans  &trans  &trans  &trans      &mt MINUS A           &mt H S                  &mt J D  &mt F K    &mt G L    &mo 1
-&trans  &trans  &trans  &trans  &trans  &trans      &mt LEFT_CONTROL Z    &mt N X                  &mt M C  &mkp LCLK  &mkp RCLK  &kp BACKSPACE
-&trans  &trans  &trans  &trans  &trans  &trans      &mt LEFT_SHIFT SPACE  &lt_to_layer_0 2 RETURN                                 &mt RIGHT_ALT GRAVE
+&trans  &trans  &trans  &trans  &trans                                      &mt Q Y                 &mt W U  &mt E I    &mt R O    &mt P T
+&trans  &trans  &trans  &trans  &trans  &trans      &mt MINUS A             &mt H S                 &mt J D  &mt F K    &mt G L    &mo 1
+&trans  &trans  &trans  &trans  &trans  &trans      &mt LEFT_CONTROL Z      &mt X N                 &mt C M  &mkp LCLK  &mkp RCLK  &kp BACKSPACE
+&trans  &trans  &trans  &trans  &trans  &trans      &lt_to_layer_0 2 SPACE  &mt RIGHT_SHIFT RETURN                                 &mt RIGHT_ALT GRAVE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -78,19 +78,19 @@
 
         Layer1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp COLON               &mt W NUMBER_4         &mt E NUMBER_5         &mt R NUMBER_6         &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mt COMMA PERIOD        &mt NUMBER_7 NUMBER_1  &mt NUMBER_8 NUMBER_2  &mt NUMBER_9 NUMBER_3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mt LEFT_BRACKET SLASH  &mt C NUMBER_0         &kp V                  &kp B                  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                                       &trans
+&trans  &trans  &trans  &trans  &trans                      &kp COLON               &mt W NUMBER_8         &mt E NUMBER_9         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mt COMMA PERIOD        &mt NUMBER_6 NUMBER_1  &mt NUMBER_7 NUMBER_2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mt LEFT_BRACKET SLASH  &mt NUMBER_5 NUMBER_0  &kp V                  &kp B   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                        &trans
             >;
         };
 
         Layer2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                 &kp C_BRI_DEC   &kp C_BRI_UP     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_DOWN  &kp UP_ARROW    &kp C_VOLUME_UP  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans             &trans                                           &trans
+&trans  &trans  &trans  &trans  &trans                                 &kp C_BRI_DEC    &kp C_BRI_UP  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans        &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LEFT_ARROW     &kp RIGHT_ARROW  &kp C         &kp V   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans             &trans                                         &trans
             >;
         };
     };
