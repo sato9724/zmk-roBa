@@ -67,10 +67,10 @@
 
         Layer0 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                       &mt Q Y               &mt W U  &mt E I    &mt R O    &mt P T
-&trans  &trans  &trans  &trans  &trans  &trans      &mt MINUS A              &mt H S               &mt J D  &mt F K    &mt G L    &mo 1
-&trans  &trans  &trans  &trans  &trans  &trans      &mt LEFT_CONTROL Z       &mt N X               &mt M C  &mkp LCLK  &mkp RCLK  &kp BACKSPACE
-&trans  &trans  &trans  &trans  &trans  &trans      &lt_to_layer_0 2 RETURN  &mt LEFT_SHIFT SPACE                                 &mt RIGHT_ALT GRAVE
+&trans  &trans  &trans  &trans  &trans                                    &mt Q Y                  &mt W U  &mt E I    &mt R O    &mt P T
+&trans  &trans  &trans  &trans  &trans  &trans      &mt MINUS A           &mt H S                  &mt J D  &mt F K    &mt G L    &mo 1
+&trans  &trans  &trans  &trans  &trans  &trans      &mt LEFT_CONTROL Z    &mt N X                  &mt M C  &mkp LCLK  &mkp RCLK  &kp BACKSPACE
+&trans  &trans  &trans  &trans  &trans  &trans      &mt LEFT_SHIFT SPACE  &lt_to_layer_0 2 RETURN                                 &mt RIGHT_ALT GRAVE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
