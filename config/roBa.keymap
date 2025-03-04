@@ -78,7 +78,7 @@
 
         Layer1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp COLON               &mt W NUMBER_8         &mt E NUMBER_9         &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &kp COLON               &mt NUMBER_8 NUMBER_3  &mt NUMBER_9 NUMBER_4  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &mt COMMA PERIOD        &mt NUMBER_6 NUMBER_1  &mt NUMBER_7 NUMBER_2  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &mt LEFT_BRACKET SLASH  &mt NUMBER_5 NUMBER_0  &kp V                  &kp B   &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                        &trans
