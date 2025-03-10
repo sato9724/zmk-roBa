@@ -87,7 +87,7 @@
 
         Layer2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                           &kp C_BRI_DEC    &kp C_BRI_UP  &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                           &kp C_BRI_DEC    &kp C_BRI_UP  &kp F5        &kp F7  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_DOWN            &kp C_VOLUME_UP  &kp V         &kp LEFT_GUI  &kp D   &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &mt LEFT_CONTROL LEFT_ARROW  &kp RIGHT_ARROW  &kp C         &trans        &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans                       &trans                                               &trans
