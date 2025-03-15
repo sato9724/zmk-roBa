@@ -68,8 +68,8 @@
         Layer0 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                      &mt Y I          &mt Q U  &mt W E    &mt R O    &mt P T
-&trans  &trans  &trans  &trans  &trans  &trans      &mt MINUS A             &mt H S          &mt J D  &mt F K    &mt G L    &lt 1 RETURN
-&trans  &trans  &trans  &trans  &trans  &trans      &mt SLASH Z             &mt X N          &mt C M  &mkp LCLK  &mkp RCLK  &kp BACKSPACE
+&trans  &trans  &trans  &trans  &trans  &trans      &mt SLASH A             &mt H S          &mt J D  &mt F K    &mt G L    &lt 1 RETURN
+&trans  &trans  &trans  &trans  &trans  &trans      &mt MINUS Z             &mt X N          &mt C M  &mkp LCLK  &mkp RCLK  &kp BACKSPACE
 &trans  &trans  &trans  &trans  &trans  &trans      &lt_to_layer_0 2 SPACE  &kp RIGHT_SHIFT                                 &mt RIGHT_ALT GRAVE
             >;
 
@@ -78,16 +78,16 @@
 
         Layer1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans                  &mt NUMBER_8 NUMBER_3  &mt NUMBER_9 NUMBER_4  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mt COLON LEFT_BRACKET  &mt NUMBER_6 NUMBER_1  &mt NUMBER_7 NUMBER_2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mt COMMA PERIOD        &mt NUMBER_5 NUMBER_0  &kp V                  &kp B   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                        &trans
+&trans  &trans  &trans  &trans  &trans                            &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &mt COLON LEFT_BRACKET  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &mt COMMA PERIOD        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp V         &kp B                   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans                                                            &trans
             >;
         };
 
         Layer2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                           &kp C_BRI_DEC    &kp C_BRI_UP  &kp F5        &kp F7  &trans
+&trans  &trans  &trans  &trans  &trans                                           &kp C_BRI_DEC    &kp C_BRI_UP  &kp F5        &kp F7  &kp F2
 &trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_DOWN            &kp C_VOLUME_UP  &kp V         &kp LEFT_GUI  &kp D   &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &mt LEFT_CONTROL LEFT_ARROW  &kp RIGHT_ARROW  &kp C         &trans        &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans                       &trans                                               &trans
