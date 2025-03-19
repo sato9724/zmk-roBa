@@ -46,7 +46,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
     };
@@ -68,7 +68,7 @@
         Layer0 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                      &mt Y I          &mt Q U  &mt W E    &mt R O    &mt P T
-&trans  &trans  &trans  &trans  &trans  &trans      &mt SLASH A             &mt H S          &mt J D  &mt F K    &mt G L    &lt 1 RETURN
+&trans  &trans  &trans  &trans  &trans  &trans      &mt SLASH A             &mt H S          &mt J D  &mt F K    &mt G L    &lt 2 RETURN
 &trans  &trans  &trans  &trans  &trans  &trans      &mt MINUS Z             &mt X N          &mt C M  &mkp LCLK  &mkp RCLK  &kp BACKSPACE
 &trans  &trans  &trans  &trans  &trans  &trans      &lt_to_layer_0 2 SPACE  &kp RIGHT_SHIFT                                 &mt RIGHT_ALT GRAVE
             >;
@@ -87,9 +87,9 @@
 
         Layer2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                           &kp C_BRI_DEC    &kp C_BRI_UP  &kp F5        &kp F7  &kp F2
-&trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_DOWN            &kp C_VOLUME_UP  &kp V         &kp LEFT_GUI  &kp D   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &mt LEFT_CONTROL LEFT_ARROW  &kp RIGHT_ARROW  &kp C         &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                           &kp C_BRI_DEC    &kp C_BRI_UP  &kp F7  &kp F5        &kp F2
+&trans  &trans  &trans  &trans  &trans  &trans      &kp C_VOLUME_DOWN            &kp C_VOLUME_UP  &kp V         &kp Z   &kp LEFT_GUI  &kp D
+&trans  &trans  &trans  &trans  &trans  &trans      &mt LEFT_CONTROL LEFT_ARROW  &kp RIGHT_ARROW  &kp C         &trans  &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans                       &trans                                               &trans
             >;
         };
