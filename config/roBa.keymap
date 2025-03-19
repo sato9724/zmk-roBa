@@ -68,7 +68,7 @@
         Layer0 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                      &mt Y I          &mt Q U  &mt W E    &mt R O    &mt P T
-&trans  &trans  &trans  &trans  &trans  &trans      &mt SLASH A             &mt H S          &mt J D  &mt F K    &mt G L    &lt 2 RETURN
+&trans  &trans  &trans  &trans  &trans  &trans      &mt SLASH A             &mt H S          &mt J D  &mt F K    &mt G L    &lt 1 RETURN
 &trans  &trans  &trans  &trans  &trans  &trans      &mt MINUS Z             &mt X N          &mt C M  &mkp LCLK  &mkp RCLK  &kp BACKSPACE
 &trans  &trans  &trans  &trans  &trans  &trans      &lt_to_layer_0 2 SPACE  &kp RIGHT_SHIFT                                 &mt RIGHT_ALT GRAVE
             >;
