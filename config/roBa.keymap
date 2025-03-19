@@ -70,7 +70,7 @@
 &mt Y I                 &mt Q U         &mt W E  &mt R O         &mt P T                                                        &mt Y I          &mt Q U  &mt W E    &mt R O    &mt P T
 &mt SLASH A             &mt J D         &mt F K  &mt G L         &lt 1 RETURN   &trans                  &mt SLASH A             &mt H S          &mt J D  &mt F K    &mt G L    &lt 1 RETURN
 &mt MINUS Z             &mt X N         &mt C M  &kp B           &kp BACKSPACE  &mt LEFT_ALT GRAVE      &mt MINUS Z             &mt X N          &mt C M  &mkp LCLK  &mkp RCLK  &kp BACKSPACE
-&lt_to_layer_0 2 SPACE  &kp LEFT_SHIFT  &kp V    &kp LEFT_SHIFT  &to 2          &kp LEFT_CONTROL        &lt_to_layer_0 2 SPACE  &kp RIGHT_SHIFT                                 &mt RIGHT_ALT GRAVE
+&lt_to_layer_0 2 SPACE  &kp LEFT_SHIFT  &kp V    &kp LEFT_SHIFT  &mo 2          &kp LEFT_CONTROL        &lt_to_layer_0 2 SPACE  &kp RIGHT_SHIFT                                 &mt RIGHT_ALT GRAVE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -78,9 +78,9 @@
 
         Layer1 {
             bindings = <
-&kp N9        &kp N8        &kp N7        &mt COLON LEFT_BRACKET  &trans                            &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &mt COLON LEFT_BRACKET  &trans
-&kp NUMBER_6  &kp N5        &kp NUMBER_4  &mt COMMA PERIOD        &trans  &trans      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &mt COMMA PERIOD        &trans
-&kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp N0                  &trans  &trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp V         &kp B                   &trans
+&kp N7        &kp N8        &kp N9        &mt COLON LEFT_BRACKET  &trans                            &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &mt COLON LEFT_BRACKET  &trans
+&kp NUMBER_4  &kp N5        &kp NUMBER_6  &mt COMMA PERIOD        &trans  &trans      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &mt COMMA PERIOD        &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0                  &trans  &trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp V         &kp B                   &trans
 &trans        &trans        &trans        &trans                  &trans  &trans      &trans        &trans                                                            &trans
             >;
         };
