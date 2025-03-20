@@ -67,10 +67,10 @@
 
         Layer0 {
             bindings = <
-&mt Y I      &mt Q U  &mt W E  &mt R O         &mt P T                                                        &mt Y I          &mt Q U  &mt W E    &mt R O    &mt P T
-&mt SLASH A  &mt J D  &mt F K  &mt G L         &lt 1 RETURN   &trans                  &mt SLASH A             &mt H S          &mt J D  &mt F K    &mt G L    &lt 1 RETURN
-&mt MINUS Z  &mt X N  &mt C M  &kp B           &kp BACKSPACE  &mt LEFT_ALT GRAVE      &mt MINUS Z             &mt X N          &mt C M  &mkp LCLK  &mkp RCLK  &kp BACKSPACE
-&kp SPACE    &mt H S  &kp V    &kp LEFT_SHIFT  &mo 2          &kp LEFT_CONTROL        &lt_to_layer_0 2 SPACE  &kp RIGHT_SHIFT                                 &mt RIGHT_ALT GRAVE
+&mt Y I      &mt Q U  &mt W E  &mt R O         &mt P T                                             &mt Y I          &mt Q U  &mt W E    &mt R O    &mt P T
+&mt SLASH A  &mt J D  &mt F K  &mt G L         &lt 1 RETURN   &trans                  &mt SLASH A  &mt H S          &mt J D  &mt F K    &mt G L    &lt 1 RETURN
+&mt MINUS Z  &mt X N  &mt C M  &kp B           &kp BACKSPACE  &mt LEFT_ALT GRAVE      &mt MINUS Z  &mt X N          &mt C M  &mkp LCLK  &mkp RCLK  &kp BACKSPACE
+&lt 2 SPACE  &mt H S  &kp V    &kp LEFT_SHIFT  &mo 2          &kp LEFT_CONTROL        &lt 2 SPACE  &kp RIGHT_SHIFT                                 &mt RIGHT_ALT GRAVE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
