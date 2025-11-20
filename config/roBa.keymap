@@ -1,5 +1,6 @@
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -46,7 +47,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 2 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
     };
@@ -67,22 +68,13 @@
 
         Layer0 {
             bindings = <
-&mt Y I      &mt Q U  &mt W E  &mt R O         &mt P T                                             &mt Y I          &mt Q U  &mt W E    &mt R O    &mt P T
-&mt SLASH A  &mt J D  &mt F K  &mt G L         &lt 1 RETURN   &trans                  &mt SLASH A  &mt H S          &mt J D  &mt F K    &mt G L    &lt 1 RETURN
-&mt MINUS Z  &mt X N  &mt C M  &kp B           &kp BACKSPACE  &mt LEFT_ALT GRAVE      &mt MINUS Z  &mt X N          &mt C M  &mkp LCLK  &mkp RCLK  &kp BACKSPACE
-&lt 2 SPACE  &mt H S  &kp V    &kp LEFT_SHIFT  &mo 2          &kp LEFT_CONTROL        &lt 2 SPACE  &kp RIGHT_SHIFT                                 &mt RIGHT_ALT GRAVE
+&mt Q Y      &mt Q W  &mt W R  &mt W T         &mt W P                                                        &kp A                  &kp I                    &kp U                  &kp E                           &kp O
+&mt W G      &mt H S  &mt J D  &mt F K         &mt LEFT_SHIFT L  &trans                &mt NUMBER_6 NUMBER_1  &mt NUMBER_7 NUMBER_2  &mt NUMBER_8 NUMBER_3    &mt NUMBER_9 NUMBER_4  &mt LC(RIGHT_CONTROL) NUMBER_5  &lt 1 RETURN
+&mt W Z      &mt W X  &mt W C  &mt W V         &mt W N           &mt W M               &mt MINUS NUMBER_0     &mt LESS_THAN COMMA    &mt GREATER_THAN PERIOD  &mkp LCLK              &mkp RCLK                       &kp BACKSPACE
+&lt 1 SPACE  &mt W W  &kp W    &kp LEFT_SHIFT  &mo 2             &kp LEFT_CONTROL      &lt 2 SPACE            &kp RIGHT_SHIFT                                                                                        &mt RIGHT_ALT GRAVE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
-        };
-
-        Layer1 {
-            bindings = <
-&kp N7        &kp N8        &kp N9        &mt COLON LEFT_BRACKET  &trans                            &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &mt COLON LEFT_BRACKET  &trans
-&kp NUMBER_4  &kp N5        &kp NUMBER_6  &mt COMMA PERIOD        &trans  &trans      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &mt COMMA PERIOD        &trans
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0                  &trans  &trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp V         &kp B                   &trans
-&trans        &trans        &trans        &trans                  &trans  &trans      &trans        &trans                                                            &trans
-            >;
         };
 
         Layer2 {
@@ -91,6 +83,15 @@
 &kp C_VOLUME_DOWN            &kp C_VOLUME_UP  &kp V   &kp LEFT_GUI  &kp D    &trans      &kp C_VOLUME_DOWN            &kp C_VOLUME_UP  &mt F Z       &kp LEFT_GUI  &kp D   &kp G
 &mt LEFT_CONTROL LEFT_ARROW  &kp RIGHT_ARROW  &kp C   &kp Z         &kp G    &trans      &mt LEFT_CONTROL LEFT_ARROW  &kp RIGHT_ARROW  &mt C V       &trans        &trans  &trans
 &trans                       &trans           &trans  &trans        &trans   &trans      &trans                       &trans                                               &trans
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                          &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_DISC 0  &bt BT_DISC 1  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &bt BT_NXT  &bt BT_PRV      &trans        &trans         &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &bt BT_CLR  &bt BT_CLR_ALL  &trans        &trans         &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans                                                      &trans
             >;
         };
     };
