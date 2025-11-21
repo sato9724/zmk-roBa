@@ -82,10 +82,10 @@
 
         Layer0 {
             bindings = <
-&mt Q Y      &mt Q W  &mt W R  &mt W T         &mt W P                                                   &mt A PRINTSCREEN   &mt A DEL           &mt A UP_ARROW    &mt A LEFT_ARROW              &mt A RIGHT_ARROW
-&mt W G      &mt H S  &mt J D  &mt F K         &mt LEFT_SHIFT L  &trans                &mt NUMBER_6 TAB  &mt NUMBER_7 F7     &mt NUMBER_8 F8     &mt A DOWN_ARROW  &mt_mouse RIGHT_CONTROL RCLK  &lt 1 RETURN
-&mt W Z      &mt W X  &mt W C  &mt W V         &mt W N           &mt W M               &mt MINUS Z       &mt LESS_THAN C     &mt GREATER_THAN V  &mkp LCLK         &mt LEFT_WIN SPACE            &kp BACKSPACE
-&lt 1 SPACE  &mt W W  &kp W    &kp LEFT_SHIFT  &mo 2             &kp LEFT_CONTROL      &lt 2 SPACE       &lt_to_layer_0 1 A                                                                      &mt RIGHT_ALT GRAVE
+&mt Q Y      &mt Q W  &mt W R  &mt W T         &mt W P                                                   &mt A PRINTSCREEN  &mt A DEL           &mt A UP_ARROW    &mt A LEFT_ARROW              &mt A RIGHT_ARROW
+&mt W G      &mt H S  &mt J D  &mt F K         &mt LEFT_SHIFT L  &trans                &mt NUMBER_6 TAB  &mt NUMBER_7 F7    &mt NUMBER_8 F8     &mt A DOWN_ARROW  &mt_mouse RIGHT_CONTROL RCLK  &lt 1 RETURN
+&mt W Z      &mt W X  &mt W C  &mt W V         &mt W N           &mt W M               &mt MINUS Z       &mt LESS_THAN C    &mt GREATER_THAN V  &mkp LCLK         &mt LEFT_WIN SPACE            &kp BACKSPACE
+&lt 1 SPACE  &mt W W  &kp W    &kp LEFT_SHIFT  &mo 2             &kp LEFT_CONTROL      &lt 2 SPACE       &lt 1 A                                                                                &mt RIGHT_ALT GRAVE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
