@@ -1,6 +1,5 @@
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -83,30 +82,30 @@
 
         Layer0 {
             bindings = <
-&mt Q Y      &mt Q W  &mt W R  &mt W T         &mt W P                                                   &kp A                  &kp I                  &mt A UP_ARROW    &mt A LEFT_ARROW              &mt A RIGHT_ARROW
-&mt W G      &mt H S  &mt J D  &mt F K         &mt LEFT_SHIFT L  &trans                &mt NUMBER_6 TAB  &mt NUMBER_7 NUMBER_2  &mt NUMBER_8 NUMBER_3  &mt A DOWN_ARROW  &mt_mouse RIGHT_CONTROL RCLK  &lt 1 RETURN
-&mt W Z      &mt W X  &mt W C  &mt W V         &mt W N           &mt W M               &mt MINUS Z       &mt LESS_THAN C        &mt GREATER_THAN V     &mkp LCLK         &mt LEFT_WIN SPACE            &kp BACKSPACE
-&lt 1 SPACE  &mt W W  &kp W    &kp LEFT_SHIFT  &mo 2             &kp LEFT_CONTROL      &lt 2 SPACE       &kp RIGHT_SHIFT                                                                               &mt RIGHT_ALT GRAVE
+&mt Q Y      &mt Q W  &mt W R  &mt W T         &mt W P                                                   &mt A PRINTSCREEN   &mt A DEL           &mt A UP_ARROW    &mt A LEFT_ARROW              &mt A RIGHT_ARROW
+&mt W G      &mt H S  &mt J D  &mt F K         &mt LEFT_SHIFT L  &trans                &mt NUMBER_6 TAB  &mt NUMBER_7 F7     &mt NUMBER_8 F8     &mt A DOWN_ARROW  &mt_mouse RIGHT_CONTROL RCLK  &lt 1 RETURN
+&mt W Z      &mt W X  &mt W C  &mt W V         &mt W N           &mt W M               &mt MINUS Z       &mt LESS_THAN C     &mt GREATER_THAN V  &mkp LCLK         &mt LEFT_WIN SPACE            &kp BACKSPACE
+&lt 1 SPACE  &mt W W  &kp W    &kp LEFT_SHIFT  &mo 2             &kp LEFT_CONTROL      &lt 2 SPACE       &lt_to_layer_0 1 A                                                                      &mt RIGHT_ALT GRAVE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        Layer2 {
+        Layer1 {
             bindings = <
-&kp C_BRI_DN                 &kp C_BRI_UP     &kp F7  &kp F5        &kp F11                                           &kp C_BRI_DEC    &kp C_BRI_UP  &kp F7        &kp F5  &kp F11
-&kp C_VOLUME_DOWN            &kp C_VOLUME_UP  &kp V   &kp LEFT_GUI  &kp D    &trans      &kp C_VOLUME_DOWN            &kp C_VOLUME_UP  &mt F Z       &kp LEFT_GUI  &kp D   &kp G
-&mt LEFT_CONTROL LEFT_ARROW  &kp RIGHT_ARROW  &kp C   &kp Z         &kp G    &trans      &mt LEFT_CONTROL LEFT_ARROW  &kp RIGHT_ARROW  &mt C V       &trans        &trans  &trans
-&trans                       &trans           &trans  &trans        &trans   &trans      &trans                       &trans                                               &trans
+&kp C_BRI_DN                 &kp C_BRI_UP     &kp F7  &kp F5        &kp F11                       &mt W I  &mt R U  &mt T E  &mt Y O  &mt Q P
+&kp C_VOLUME_DOWN            &kp C_VOLUME_UP  &kp V   &kp LEFT_GUI  &kp D    &trans      &mt A A  &mt A S  &mt A D  &mt A G  &mt F H  &mt C K
+&mt LEFT_CONTROL LEFT_ARROW  &kp RIGHT_ARROW  &kp C   &kp Z         &kp G    &trans      &mt J Z  &mt L X  &mt A V  &mt A B  &mt A N  &mt A M
+&trans                       &trans           &trans  &trans        &trans   &trans      &trans   &trans                              &mt RIGHT_SHIFT A
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_DISC 0  &bt BT_DISC 1  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &bt BT_NXT  &bt BT_PRV      &trans        &trans         &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &bt BT_CLR  &bt BT_CLR_ALL  &trans        &trans         &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans                                                      &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &kp N7  &kp N8  &kp N9
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp N4  &kp N5  &kp N6
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp N1  &kp N2  &kp N3
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &kp N0
             >;
         };
     };
