@@ -61,6 +61,19 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        // ▼▼▼ 追加した部分 ▼▼▼
+        // Holdでキー入力(&kp)、Tapでマウス入力(&mkp)を行う設定
+        mt_mouse: mouse_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOUSE_MOD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // 長押し判定の時間
+            quick-tap-ms = <175>;       // 素早い入力の判定
+            flavor = "tap-preferred";   // タップ優先（マウス誤爆防止）
+            bindings = <&kp>, <&mkp>;
+        };
+        // ▲▲▲ 追加ここまで ▲▲▲
     };
 
     keymap {
@@ -70,7 +83,7 @@
             bindings = <
 &mt Q Y      &mt Q W  &mt W R  &mt W T         &mt W P                                                        &kp A                  &kp I                    &kp U                  &kp E                           &kp O
 &mt W G      &mt H S  &mt J D  &mt F K         &mt LEFT_SHIFT L  &trans                &mt NUMBER_6 NUMBER_1  &mt NUMBER_7 NUMBER_2  &mt NUMBER_8 NUMBER_3    &mt NUMBER_9 NUMBER_4  &mt LC(RIGHT_CONTROL) NUMBER_5  &lt 1 RETURN
-&mt W Z      &mt W X  &mt W C  &mt W V         &mt W N           &mt W M               &mt MINUS NUMBER_0     &mt LESS_THAN COMMA    &mt GREATER_THAN PERIOD  &mkp LCLK              &mkp RCLK                       &kp BACKSPACE
+&mt W Z      &mt W X  &mt W C  &mt W V         &mt W N           &mt W M               &mt MINUS NUMBER_0     &mt LESS_THAN COMMA    &mt GREATER_THAN PERIOD  &mkp LCLK              &mt_mouse LCTRL RCLK            &kp BACKSPACE
 &lt 1 SPACE  &mt W W  &kp W    &kp LEFT_SHIFT  &mo 2             &kp LEFT_CONTROL      &lt 2 SPACE            &kp RIGHT_SHIFT                                                                                        &mt RIGHT_ALT GRAVE
             >;
 
