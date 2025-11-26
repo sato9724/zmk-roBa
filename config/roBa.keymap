@@ -75,7 +75,18 @@
             bindings = <&kp>, <&mkp>;
         };
 
-        // ▲▲▲ 追加ここまで ▲▲▲
+        // ▼ ここから追加 ▼
+        // Tapでキー入力(&kp)、Holdでマウス入力(&mkp)
+
+        km_tap: key_mouse_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KEY_MOUSE_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // 長押し判定の時間
+            quick-tap-ms = <175>;       // 素早い連打の挙動
+            flavor = "tap-preferred";   // タップ入力を優先
+            bindings = <&mkp>, <&kp>;   // ★ここが逆！ Hold=マウス, Tap=キー
+        };
     };
 
     keymap {
