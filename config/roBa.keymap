@@ -47,7 +47,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
     };
@@ -81,23 +81,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Layer0 {
-            bindings = <
-&mt Q Y      &mt Q W  &mt W R  &mt W T         &mt W P                                                   &mt A PRINTSCREEN  &mt A DEL           &mt A UP_ARROW    &mt A LEFT_ARROW              &mt A RIGHT_ARROW
-&mt W G      &mt H S  &mt J D  &mt F K         &mt LEFT_SHIFT L  &trans                &mt NUMBER_6 TAB  &mt NUMBER_7 F7    &mt NUMBER_8 F8     &mt A DOWN_ARROW  &mt_mouse RIGHT_CONTROL RCLK  &lt 1 RETURN
-&mt W Z      &mt W X  &mt W C  &mt W V         &mt W N           &mt W M               &mt MINUS Z       &mt LESS_THAN C    &mt GREATER_THAN V  &mkp LCLK         &mt LEFT_WIN SPACE            &kp BACKSPACE
-&lt 1 SPACE  &mt W W  &kp W    &kp LEFT_SHIFT  &mo 2             &kp LEFT_CONTROL      &lt 2 SPACE       &tog 1                                                                                 &mt RIGHT_ALT GRAVE
-            >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
-        };
-
         Layer1 {
             bindings = <
-&kp C_BRI_DN                 &kp C_BRI_UP     &kp F7  &kp F5        &kp F11                       &mt W I  &mt R U  &mt T E  &mt Y O  &mt Q P
-&kp C_VOLUME_DOWN            &kp C_VOLUME_UP  &kp V   &kp LEFT_GUI  &kp D    &trans      &mt A A  &mt A S  &mt A D  &mt A G  &mt F H  &mt C K
-&mt LEFT_CONTROL LEFT_ARROW  &kp RIGHT_ARROW  &kp C   &kp Z         &kp G    &trans      &mt J Z  &mt L X  &mt A V  &mt A B  &mt A N  &mt A M
-&trans                       &trans           &trans  &trans        &trans   &trans      &trans   &trans                              &mt RIGHT_SHIFT A
+&kp C_BRI_DN                 &kp C_BRI_UP     &kp F7  &kp F5        &kp F11                       &mt W I         &mt R U  &mt T E    &mt Y O                      &mt LEFT_SHIFT P
+&kp C_VOLUME_DOWN            &kp C_VOLUME_UP  &kp V   &kp LEFT_GUI  &kp D    &trans      &mt A A  &mt A S         &mt D H  &mt G K    &mt_mouse LEFT_CONTROL RCLK  &lt 1 RETURN
+&mt LEFT_CONTROL LEFT_ARROW  &kp RIGHT_ARROW  &kp C   &kp Z         &kp G    &trans      &mt Y Z  &mt C X         &mt V B  &mkp LCLK  &mt M N                      &kp BACKSPACE
+&trans                       &trans           &trans  &trans        &trans   &trans      &trans   &kp LEFT_SHIFT                                                   &mt LEFT_ALT GRAVE
             >;
         };
 
@@ -107,6 +96,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp N4  &kp N5  &kp N6
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp N1  &kp N2  &kp N3
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &kp N0
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
