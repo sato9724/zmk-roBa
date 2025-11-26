@@ -99,7 +99,7 @@
 &kp C_BRI_DN                 &kp C_BRI_UP     &kp F7  &kp F5        &kp F11                           &mt W I             &mt R U  &mt T E         &mt Y O         &mt LEFT_CONTROL P
 &kp C_VOLUME_DOWN            &kp C_VOLUME_UP  &kp V   &kp LEFT_GUI  &kp D    &trans      &mt MINUS A  &mt PRINTSCREEN S   &mt G D  &mt QUESTION H  &km_tap RCLK K  &lt 1 RETURN
 &mt LEFT_CONTROL LEFT_ARROW  &kp RIGHT_ARROW  &kp C   &kp Z         &kp G    &trans      &mt Y Z      &mt C X             &mt V B  &mt M N         &mkp LCLK       &kp BACKSPACE
-&trans                       &trans           &trans  &trans        &trans   &trans      &lt 1 SPACE  &mt LEFT_SHIFT TAB                                           &mt LEFT_WIN GRAVE
+&trans                       &trans           &trans  &trans        &trans   &trans      &lt 1 SPACE  &mt LEFT_SHIFT TAB                                           &mt LEFT_ALT GRAVE
             >;
         };
 
