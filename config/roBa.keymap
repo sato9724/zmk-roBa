@@ -105,8 +105,8 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                               &trans            &trans                             &kp N7  &kp N8          &mt N9 AT_SIGN
-&trans  &trans  &trans  &trans  &trans  &trans      &mt COMMA PERIOD                 &mt A UP_ARROW    &trans                             &kp N4  &kp N5          &kp N6
+&trans  &trans  &trans  &trans  &trans                                               &trans            &trans                             &kp N7  &kp N8          &mt SINGLE_QUOTE N9
+&trans  &trans  &trans  &trans  &trans  &trans      &mt PERIOD COMMA                 &mt A UP_ARROW    &trans                             &kp N4  &kp N5          &kp N6
 &trans  &trans  &trans  &trans  &trans  &trans      &mt LEFT_PARENTHESIS LEFT_ARROW  &mt A DOWN_ARROW  &mt RIGHT_PARENTHESIS RIGHT_ARROW  &kp N1  &mt A NUMBER_2  &kp N3
 &trans  &trans  &trans  &trans  &trans  &trans      &trans                           &mt LEFT_SHIFT A                                                             &kp N0
             >;
