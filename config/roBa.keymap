@@ -86,37 +86,29 @@
             quick-tap-ms = <175>;       // 素早い連打の挙動
             flavor = "tap-preferred";   // タップ入力を優先
             bindings = <&mkp>, <&kp>;
-   // ★ここが逆！ Hold=マウス, Tap=キー
+
+            // ★ここが逆！ Hold=マウス, Tap=キー
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        Layer1 {
+        Layer0 {
             bindings = <
-&kp C_BRI_DN                 &kp C_BRI_UP     &kp F7  &kp F5        &kp F11                           &mt W I             &mt R U  &mt T E  &mt Y O         &mt LEFT_CONTROL P
-&kp C_VOLUME_DOWN            &kp C_VOLUME_UP  &kp V   &kp LEFT_GUI  &kp D    &trans      &mt A A      &mt PRINTSCREEN S   &mt G D  &mt G H  &km_tap RCLK K  &lt 1 RETURN
-&mt LEFT_CONTROL LEFT_ARROW  &kp RIGHT_ARROW  &kp C   &kp Z         &kp G    &trans      &mt Y Z      &mt C X             &mt V B  &mt M N  &mkp LCLK       &kp BACKSPACE
-&trans                       &trans           &trans  &trans        &trans   &trans      &lt 1 SPACE  &mt LEFT_SHIFT TAB                                    &mt LEFT_WIN GRAVE
+&kp C_BRI_DN                 &kp C_BRI_UP     &kp F7  &kp F5        &kp F11                           &mt W I             &mt R U  &mt T E         &mt Y O         &mt LEFT_CONTROL P
+&kp C_VOLUME_DOWN            &kp C_VOLUME_UP  &kp V   &kp LEFT_GUI  &kp D    &trans      &mt MINUS A  &mt PRINTSCREEN S   &mt G D  &mt QUESTION H  &km_tap RCLK K  &lt 1 RETURN
+&mt LEFT_CONTROL LEFT_ARROW  &kp RIGHT_ARROW  &kp C   &kp Z         &kp G    &trans      &mt Y Z      &mt C X             &mt V B  &mt M N         &mkp LCLK       &kp BACKSPACE
+&trans                       &trans           &trans  &trans        &trans   &trans      &lt 1 SPACE  &mt LEFT_SHIFT TAB                                           &mt LEFT_WIN GRAVE
             >;
         };
 
-        layer_2 {
+        layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &kp N7  &kp N8  &kp N9
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp N4  &kp N5  &kp N6
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp N1  &kp N2  &kp N3
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &kp N0
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                                               &trans            &trans                             &kp N7  &kp N8          &mt N9 AT_SIGN
+&trans  &trans  &trans  &trans  &trans  &trans      &mt COMMA PERIOD                 &mt A UP_ARROW    &trans                             &kp N4  &kp N5          &kp N6
+&trans  &trans  &trans  &trans  &trans  &trans      &mt LEFT_PARENTHESIS LEFT_ARROW  &mt A DOWN_ARROW  &mt RIGHT_PARENTHESIS RIGHT_ARROW  &kp N1  &mt A NUMBER_2  &kp N3
+&trans  &trans  &trans  &trans  &trans  &trans      &trans                           &mt LEFT_SHIFT A                                                             &kp N0
             >;
         };
     };
