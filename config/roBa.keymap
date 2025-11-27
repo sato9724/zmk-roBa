@@ -102,7 +102,7 @@
 &kp LEFT_CONTROL  &kp LEFT_WIN  &trans  &kp TAB  &trans  &trans      &trans  &kp SPACE                                &mt LEFT_ALT GRAVE
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         layer_1 {
