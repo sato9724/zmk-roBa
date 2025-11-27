@@ -94,21 +94,21 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Layer0 {
+        layer_2 {
             bindings = <
-&kp C_BRI_DN                 &kp C_BRI_UP     &kp F7  &kp F5        &kp F11                           &mt W I             &mt R U  &mt T E         &mt Y O         &mt LEFT_CONTROL P
-&kp C_VOLUME_DOWN            &kp C_VOLUME_UP  &kp V   &kp LEFT_GUI  &kp D    &trans      &mt MINUS A  &mt PRINTSCREEN S   &mt G D  &mt QUESTION H  &km_tap RCLK K  &lt 1 RETURN
-&mt LEFT_CONTROL LEFT_ARROW  &kp RIGHT_ARROW  &kp C   &kp Z         &kp G    &trans      &mt Y Z      &mt C X             &mt V B  &mt M N         &mkp LCLK       &kp BACKSPACE
-&trans                       &trans           &trans  &trans        &trans   &trans      &lt 1 SPACE  &mt LEFT_SHIFT TAB                                           &mt LEFT_ALT GRAVE
+&kp Q             &kp W         &kp E   &kp R    &kp T                       &kp Y      &kp U  &kp I  &kp O           &kp P
+&kp A             &kp S         &kp D   &kp F    &kp G   &trans      &trans  &kp H      &kp J  &kp K  &km_tap RCLK L  &lt 1 ENTER
+&kp Z             &kp X         &kp C   &kp V    &trans  &trans      &trans  &kp B      &kp N  &kp M  &mkp LCLK       &kp BSPC
+&kp LEFT_CONTROL  &kp LEFT_WIN  &trans  &kp TAB  &trans  &trans      &trans  &kp SPACE                                &mt LEFT_ALT GRAVE
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                               &trans            &trans                             &kp N7  &kp N8          &mt SINGLE_QUOTE N9
-&trans  &trans  &trans  &trans  &trans  &trans      &mt PERIOD COMMA                 &mt A UP_ARROW    &trans                             &kp N4  &kp N5          &kp N6
-&trans  &trans  &trans  &trans  &trans  &trans      &mt LEFT_PARENTHESIS LEFT_ARROW  &mt A DOWN_ARROW  &mt RIGHT_PARENTHESIS RIGHT_ARROW  &kp N1  &mt A NUMBER_2  &kp N3
-&trans  &trans  &trans  &trans  &trans  &trans      &trans                           &mt LEFT_SHIFT A                                                             &kp N0
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
