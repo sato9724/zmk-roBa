@@ -101,6 +101,8 @@
 &kp Z             &kp X         &kp C   &kp V    &trans  &trans      &trans  &kp B      &kp N  &kp M  &mkp LCLK       &kp BSPC
 &kp LEFT_CONTROL  &kp LEFT_WIN  &trans  &kp TAB  &trans  &trans      &trans  &kp SPACE                                &mt LEFT_ALT GRAVE
             >;
+
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         layer_1 {
