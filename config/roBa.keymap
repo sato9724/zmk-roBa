@@ -117,7 +117,7 @@
         layer_2 {
             bindings = <
 &trans     &trans     &trans     &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans     &trans     &trans     &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp A      &trans     &trans     &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &kp LC(C)  &kp LC(V)  &kp LG(V)  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &trans     &trans     &trans  &trans  &trans      &trans  &trans                          &trans
             >;
