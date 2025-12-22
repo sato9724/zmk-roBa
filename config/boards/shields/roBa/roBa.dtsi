@@ -8,14 +8,14 @@
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
-        columns = <5>;
-        rows = <5>;
+        columns = <6>;
+        rows = <4>;
+        // roBa本来の4行6列マップ
         map = <
-RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4)    RC(0,4) RC(0,3) RC(0,2) RC(0,1) RC(0,0)
-RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4)    RC(1,4) RC(1,3) RC(1,2) RC(1,1) RC(1,0)
-RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)    RC(2,4) RC(2,3) RC(2,2) RC(2,1) RC(2,0)
-RC(3,0) RC(3,1) RC(3,2)                    RC(3,2) RC(3,1) RC(3,0)
-RC(4,0) RC(4,1) RC(4,2)                    RC(4,2) RC(4,1) RC(4,0)
+RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5)    RC(0,5) RC(0,4) RC(0,3) RC(0,2) RC(0,1) RC(0,0)
+RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4) RC(1,5)    RC(1,5) RC(1,4) RC(1,3) RC(1,2) RC(1,1) RC(1,0)
+RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)    RC(2,5) RC(2,4) RC(2,3) RC(2,2) RC(2,1) RC(2,0)
+RC(3,0) RC(3,1) RC(3,2)                            RC(3,2) RC(3,1) RC(3,0)
         >;
     };
 
@@ -23,26 +23,25 @@ RC(4,0) RC(4,1) RC(4,2)                    RC(4,2) RC(4,1) RC(4,0)
         compatible = "zmk,kscan-gpio-matrix";
         wakeup-source;
         
-        // ★ここが重要：ダイオードの向き
-        // 連打される場合は、ここの row2col / col2row を逆にすると直ることが多いです
-        diode-direction = "col2row";
+        // ★ここを変更しました：col2row -> row2col
+        diode-direction = "row2col";
 
-        // ★ピン配置（逆順にしてあります）
+        // ★列ピン（6本に修正）
         col-gpios
-            = <&xiao_d 8 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 9 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 10 GPIO_ACTIVE_HIGH>
+            = <&xiao_d 4 GPIO_ACTIVE_HIGH>
             , <&xiao_d 5 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 4 GPIO_ACTIVE_HIGH>
+            , <&xiao_d 10 GPIO_ACTIVE_HIGH>
+            , <&xiao_d 9 GPIO_ACTIVE_HIGH>
+            , <&xiao_d 8 GPIO_ACTIVE_HIGH>
+            , <&xiao_d 7 GPIO_ACTIVE_HIGH>
             ;
 
-        // ★行ピン（プルダウン抵抗を確実に設定）
+        // ★行ピン（4本に修正）
         row-gpios
             = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
 };
