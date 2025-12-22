@@ -9,15 +9,13 @@
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <5>;
-        rows = <5>;
-        // 【重要】ここで最初から並び順を逆にしました（0,4 -> 0,0）
-        // これで「A」を押して「G」が出る現象を直します
+        rows = <4>;
+        // A~Gの場所がズレないように、少し広めにマップを取ります
         map = <
-RC(0,4) RC(0,3) RC(0,2) RC(0,1) RC(0,0)    RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4)
-RC(1,4) RC(1,3) RC(1,2) RC(1,1) RC(1,0)    RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4)
-RC(2,4) RC(2,3) RC(2,2) RC(2,1) RC(2,0)    RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)
-RC(3,2) RC(3,1) RC(3,0)                    RC(3,0) RC(3,1) RC(3,2)
-RC(4,2) RC(4,1) RC(4,0)                    RC(4,0) RC(4,1) RC(4,2)
+RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4)    RC(0,4) RC(0,3) RC(0,2) RC(0,1) RC(0,0)
+RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4)    RC(1,4) RC(1,3) RC(1,2) RC(1,1) RC(1,0)
+RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)    RC(2,4) RC(2,3) RC(2,2) RC(2,1) RC(2,0)
+RC(3,0) RC(3,1) RC(3,2)                    RC(3,2) RC(3,1) RC(3,0)
         >;
     };
 
@@ -25,24 +23,26 @@ RC(4,2) RC(4,1) RC(4,0)                    RC(4,0) RC(4,1) RC(4,2)
         compatible = "zmk,kscan-gpio-matrix";
         wakeup-source;
         
-        // ★以前「反応した」ときの設定に戻します
+        // ★以前「連打された（＝電気は通じた）」設定に戻します
         diode-direction = "col2row";
 
-        // ★ピンの順番も「反応した」ときのもの（D4始まり）に戻します
+        // ★列ピン：逆順（D8始まり）にします
+        // これで「Aを押してGが出る」現象が直るはずです
         col-gpios
-            = <&xiao_d 4 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 5 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 10 GPIO_ACTIVE_HIGH>
+            = <&xiao_d 8 GPIO_ACTIVE_HIGH>
             , <&xiao_d 9 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 8 GPIO_ACTIVE_HIGH>
+            , <&xiao_d 10 GPIO_ACTIVE_HIGH>
+            , <&xiao_d 5 GPIO_ACTIVE_HIGH>
+            , <&xiao_d 4 GPIO_ACTIVE_HIGH>
             ;
 
+        // ★行ピン：【重要】D6を削除しました
+        // D6は通信ラインと干渉して連打の原因になりやすいので、一旦4行だけにします
         row-gpios
             = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
 };
